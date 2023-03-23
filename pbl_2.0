@@ -1,0 +1,515 @@
+<html>
+
+<head>
+    <title>Myproject</title>
+    <style>
+        body {
+            background: url('pexels-ivan-samkov-5947556.jpg');
+            background-repeat: no-repeat;
+            background-size: 100%;
+        }
+
+        .mid {
+            display: block;
+            width: 100%;
+            /* border:2px solid black; */
+            margin: auto;
+            top:0px;
+            left:0px;
+            list-style: none;
+        }
+
+        .mid1 {
+            display: block;
+            width: 66%;
+            margin: -7px 277px;
+            list-style: none;
+        }
+
+        .top1 {
+            display: inline-block;
+            /* border:2px solid black; */
+            padding: 16px 8px 44px 12px;
+            width: 100%;
+            background-color: rgb(219, 207, 207);
+            margin-top: -10px;
+            margin-left:-8px;
+            margin-right:5px;
+           
+        }
+
+        .top2 {
+            display: inline-block;
+            /* border:2px solid black; */
+            padding: 39px 14px 36px 238px;
+            background-color: rgb(224, 221, 221);
+            width: 129%;
+            margin-left: -287px;
+            margin-top: -25px;
+            opacity:1;
+            /* box-shadow: 5px 5px rgb(63, 61, 61); */
+        }
+
+        .top1 li {
+            display: inline-block;
+            font-size: 20px;
+            margin-top: -28px;
+        }
+
+        .top2 li {
+            display: inline-block;
+            font-size: 18px;
+            margin-top: -10px;
+        }
+
+        .top2 img {
+            height: 82px;
+            width: 100px;
+            margin: -10px 62px -25px -106px;
+            border: 1px solid white;
+            border-radius: 5px;
+
+        }
+
+        .top1 li a {
+
+            color: rgb(0, 0, 0);
+            text-decoration: none;
+            font-weight: bold;
+            padding: 84px;
+        }
+
+        .top2 li a {
+            color: rgb(0, 0, 0);
+            text-decoration: none;
+            font-weight: bold;
+            padding: 40px;
+        }
+
+        .top1 li a:hover {
+            color: red;
+            text-decoration: underline;
+        }
+
+        .top2 li a:hover,
+        .top2 li a.active {
+            color: red;
+            text-decoration: underline;
+        }
+
+        .tagline {
+            border: 2px solid black;
+            margin: -15px -29px 51px -8px;
+            background-color: black;
+            width: 101%;
+        }
+
+        .sale {
+            margin: 2px 5px 5px 640px;
+            color: white;
+        }
+
+        .sale a {
+            color: rgb(226, 151, 90);
+        }
+
+        #h11 {
+            padding-left: 1px;
+            padding-right: 27px;
+        }
+
+        #h12 {
+            padding-left: 1px;
+            padding-right: 27px;
+        }
+
+        #h13 {
+            padding-left: 1px;
+            padding-right: 27px;
+        }
+
+        #h14 {
+            padding-left: 1px;
+            padding-right: 27px;
+        }
+
+        #h15 {
+            padding-left: 883px;
+            padding-right: 5px;
+        }
+
+        #h16 {
+            padding-left: 5px;
+            padding-right: 5px;
+        }
+
+        #h28 img {
+            display: block;
+            /* border:0.5px solid black; */
+            margin: -51px 10px -22px 3px;
+            height: 20px;
+            width: 52%;
+        }
+        #h30 img{
+            display: block;
+            /* border:0.5px solid black; */
+            margin: -51px 10px -22px 3px;
+            padding: 5px 0px 0px 0px;
+            height: 25px;
+            width: 60%;
+            border:none;
+        }
+        .top1 img {
+            height: 35px;
+            width: 100px;
+            padding-top: 5px;
+        }
+
+        .logo {
+            height: 20px;
+            width: 100px;
+            margin-left: 113px;
+        }
+
+        .salecontainer {
+            border: 5px solid rgb(2, 2, 2);
+            font-size: 50px;
+            font-family: "Courgette variant0", Tofu;
+            ;
+            width: 32%;
+            height: 500;
+            padding: 249px 0px 21px 244px;
+            font-weight: bold;
+            margin: 29px 28px 21px 105px;
+            background: url('back.jpg');
+            background-size: 875px;
+            background-repeat: no-repeat;
+
+        }
+
+        .line {
+            /* border:; */
+            /* --border-bg: conic-gradient(red, yellow, lime, aqua, blue, magenta, red); */
+            font-size: 20px;
+            margin: -205px 0px 57px -249px;
+            transform: rotate(-6deg);
+            background-color: rgb(163, 16, 131);
+            color: rgb(240, 205, 92);
+            z-index: -1;
+            animation: animatedgradient 3s ease alternate infinite;
+            border: 5px solid #5df506;
+            background-size: 10%;
+            border-radius: 10px;
+            opacity: 1;
+
+        }
+
+        @keyframes animatedgradient {
+            0% {
+                border-color: #d7e60e;
+            }
+
+            50% {
+                border-color: #01132e;
+            }
+
+            100% {
+                border-color: #67bce4;
+            }
+        }
+
+        /* .fashion{ */
+        .tagline a:hover {
+            color: rgb(235, 235, 49);
+        }
+
+        #h29 input {
+            margin: 3px -6px 5px -33px;
+        }
+
+        :root {
+            --angle: 0deg;
+        }
+
+        .blink {
+            display: flex;
+            font-size: 40px;
+            border: 2px solid black;
+            padding: 54px 14px 54px 7px;
+            margin: 308px 377px 5px -142px;
+            background-color: rgb(129, 16, 22);
+            height: 113px;
+            width: 239px;
+            border-radius: 82px;
+            justify-content: center;
+            align-items: center;
+            border: 5px solid #5df506;
+            /*background-size:10%;
+            border-radius:30px;
+            animation: changecolor 1s linear infinite; */
+            border-radius: 70px;
+            border-image: conic-gradient(from var(--angle), red, yellow, lime, aqua, blue, magenta, red) 1;
+            /* border-image-outset: 5px; */
+            border-image-width:5px;
+            animation: 1s rotate linear infinite;
+        }
+
+        @keyframes rotate {
+            to {
+                --angle: 360deg;
+            }
+        }
+
+        @property --angle {
+            syntax: '<angle>';
+            initial-value: 0deg;
+            inherits: false;
+        }
+
+        span {
+
+            color: rgb(240, 190, 27);
+            animation: blink 1s linear infinite;
+        }
+
+        @keyframes blink {
+            0% {
+                opacity: 0;
+            }
+
+            25% {
+                opacity: .5;
+            }
+
+            50% {
+                opacity: 1;
+            }
+
+            75% {
+                opacity: 1.5;
+            }
+
+            100% {
+                opacity: 2;
+            }
+        }
+
+        /* @keyframes changecolor {
+            0% {
+                border-right-color:  #d7e60e;
+            }
+
+            25% {
+                border-left-color:  #01132e;
+            }
+
+            50% {
+                border-top-color:  #67bce4;
+            }
+            75% {
+                border-right-color:  #f51707;
+            }
+            100% {
+                border-bottom-color:  #630521;
+            }
+        } */
+
+
+        .btn button {
+            display: inline-block;
+            margin: 75px 5px 5px -133px;
+            padding: 15px 5px 13px 5px;
+            width: 50%;
+            font-size: 20px;
+            border: 2px solid red;
+            border-radius: 10px;
+            background-color: blanchedalmond;
+            cursor: pointer;
+        }
+
+        .btn button:hover {
+            background-color: rgb(248, 248, 160);
+            transform: scale(1.2);
+        }
+        .btn button a{
+            text-decoration: none;
+        }
+
+        .container1 {
+            border: 2px solid black;
+            float: right;
+            margin: -795px 20px 48px 35px;
+            height: 250px;
+            width: 30%;
+            text-align: center;
+            font-size: 40px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            background-image: url('men.avif');
+            background-repeat: no-repeat;
+            background-size: 509px;
+            background-position-x: center;
+            border-radius: 10px;
+            border-style: groove;
+            /* box-shadow:1px 2px rgb(206, 200, 200); */
+        }
+
+        .container2 {
+            border: 2px solid black;
+            float: right;
+            margin: -514px 20px 48px 35px;
+            height: 250px;
+            width: 30%;
+            text-align: center;
+            font-size: 40px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            background-image: url('women.avif');
+            background-repeat: no-repeat;
+            background-size: 470px;
+            background-position-x: left;
+            border-radius: 10px;
+            border-style: groove;
+        }
+
+        .container3 {
+            border: 2px solid black;
+            float: right;
+            margin: -233px 20px 73px 86px;
+            height: 250px;
+            padding-left:1px;
+            width: 30%;
+            text-align: center;
+            font-size: 40px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            background-image: url('babyfashion.webp');
+            background-repeat: no-repeat;
+            background-size:464px;
+            border-radius: 10px;
+            border-style: groove;
+        }
+
+        .container1 a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .container2 a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .container3 a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .container1 a:hover,
+        .container2 a:hover,
+        .container3 a:hover {
+            color: grey;
+            
+        }
+        .container1:hover,
+        .container2:hover,
+        .container3:hover{
+            transform:scale(1.1);
+        }
+
+        .delivery img {
+            /* border:2px solid black; */
+            height: 120px;
+            width: 120px;
+           
+            margin: -304px 0px 0px 130px;
+            
+        }
+        hr {
+            background-color: black;
+            width: 73%;
+            margin: -184px 30px 5px 130px;
+            
+        }
+        .delivery img {
+            
+            animation:transformation;
+            animation-duration: 5s;
+            animation-fill-mode:forwards;
+            animation-iteration-count: infinite;
+            
+        }
+        @keyframes transformation{
+            0%{
+                transform:translateX(180%);
+            }
+            100%{
+                transform:translateX(0%);
+            }
+            
+        }
+        .end{
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            margin: 90px 34px 5px 613px;
+        }
+  
+        
+    </style>
+</head>
+
+<body>
+    <div class="mid">
+        <ul class="top1">
+            <li><a href="#" id="h11">About Us</a></li>
+            <li><a href="#" id="h12">Privacy</a></li>
+            <li><a href="#" id="h13">FAQ</a></li>
+            <li><a href="careers.html" id="h14">Careers</a></li>
+            <li><a href="#" id="h15">My Wishlist</a></li>
+            <li><a href="#" id="h16">Track your order</a></li>
+            <!-- <li ><a href="#" ><img src="12.png" alt=""></a></li> -->
+            <hr>
+        </ul>
+    </div>
+    <div class="mid1">
+        <ul class="top2">
+            <li><img src="brand1.png" alt=""></li>
+            <li><a href="#" id="h21" class="active">Home</a></li>
+            <li><a href="mensfashion.html" id="h22">Men</a></li>
+            <li><a href="womenfashion.html" id="h23">Women</a></li>
+            <li><a href="#" id="h24">Baby Collection</a></li>
+            <li><a href="#" id="h25">Pages</a></li>
+            <li><a href="#" id="h27">Contact</a></li>
+            <li><a href="#" id="h30"><img src="mycart.jpeg" alt=""></a></li>
+            <li><a href="registration.html" id="h28"><img src="signin.jpeg" alt=""></a></li>
+            <li><a href="#" id="h29"><input type="text" placeholder="Search this website"></a></li>
+        </ul>
+    </div>
+    <div class="salecontainer">
+        <div class="line">
+            <marquee>LAST DAY OF SALE Hurry Up! LAST DAY OF SALE Hurry Up! LAST DAY OF SALE Hurry Up!</marquee>
+        </div>
+        <div class="blink">
+            <marquee direction=""><span>Upto 40 to 50% off Hurry UP !<br>With Free Delivery!</span></marquee>
+        </div>
+        <div class="btn">
+            <button><a href="registration.html">Shop Now</a></button>
+        </div>
+        <div class="delivery">
+            <img src="deliveryboy-PhotoRoom.png-PhotoRoom.png" alt="">
+            <br>
+            <hr>
+        </div>
+        <!-- <div class="fashion">Fashion Sale</div> -->
+    </div>
+    <div class="container1">
+        <a href="mensfashion.html">Men's Fashion</a>
+    </div>
+    <div class="container2">
+        <a href="womenfashion.html">Women's Fashion</a>
+    </div>
+    <div class="container3">
+        <a href="">Baby's Fashion</a>
+    </div>
+</body>
+<footer>
+    <p class="end">Copyright &copy; www.infinity.com. All rights reserved!</p></footer>
+</html>

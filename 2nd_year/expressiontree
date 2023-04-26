@@ -1,0 +1,118 @@
+//Construct an expression tree from the given prefix expression eg. +--a*bc/def and
+//traverse it using post order traversal (non recursive) and then delete the entire tree
+#include<iostream>
+#include<stack>
+#include<cstring>
+using namespace std;
+typedef struct node {
+char data;  
+	struct node*Lchild,*Rchild;
+	
+}Tnode;
+class tree{
+	char prefix[20];
+	public:
+		Tnode*top;
+		void expression(char[]);
+		void display(node*);
+		void postorder(node*);
+		void del(node*);
+};
+class stack1{
+	Tnode*data[30];
+	int top;
+	public:
+		stack1(){
+			top=-1;
+		}
+		int empty()
+		{
+			if(top==-1)
+				return 1;
+			return 0;
+		}
+		void push(Tnode*p)
+		{
+			data[++top]=p;
+		}
+		Tnode*pop(){
+			return (data[top--]);
+		}
+};
+void tree:: expression(char prefix[])
+{
+	char c;
+	stack1 s;
+	Tnode*t1,*t2;
+	int len,i;
+	len=strlen(prefix);
+	for(i=len-1;i>=0;i--)
+	{
+		top=new node;
+		top->Lchild=NULL;
+		top->Rchild=NULL;
+		if(isalpha(prefix[i])){
+			top->data=prefix[i];
+			s.push(top);
+		}
+		else if(prefix[i]=='+' || prefix[i]=='-' || prefix[i]=='*' || prefix[i]=='/')
+		{
+			t2=s.pop();
+			t1=s.pop();
+			top->data=prefix[i];
+			top->Lchild=t2;
+			top->Rchild=t1;
+			s.push(top);
+		}
+	}
+	top=s.pop();
+}
+void tree :: display(Tnode*root)
+{
+	if(root!=NULL)
+	{
+		cout<<root->data;
+		display(root->Lchild);
+		display(root->Rchild);
+	}
+}
+void tree :: postorder(Tnode*top)
+{
+	stack1 s1,s2;
+	Tnode*T=top;
+	s1.push(T);
+	while(!s1.empty())
+	{
+		T=s1.pop();
+		s2.push(T);
+		if(T->Lchild !=NULL)
+			s1.push(T->Lchild);
+		if(T->Rchild !=NULL)
+			s1.push(T->Rchild);
+	}
+	while(!s2.empty())
+	{
+		top=s2.pop();
+		cout<<top->data;
+	}
+}
+void tree :: del(Tnode*node)
+{
+	if(node == NULL)
+		return;
+	del(node->Lchild);
+	del(node->Rchild);
+	cout<<endl<<"Deleting node : "<<node->data<<endl;
+	free(node);
+}
+int main()
+{
+	char expr[20];
+	tree t;
+	cout<<"Enter prefix expression "<<endl;
+	cin>>expr;
+	cout<<expr<<endl;
+	t.expression(expr);
+	t.postorder(t.top);
+}
+	

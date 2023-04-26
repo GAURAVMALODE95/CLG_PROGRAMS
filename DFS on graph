@@ -1,0 +1,51 @@
+#include<iostream>
+using namespace std;
+
+class adjency
+{
+        public:
+            int n;
+            int a[3][3];
+            int dfs[10];
+            
+            void creat()
+            {
+                
+                for(int i=0;i<3;i++)
+                {
+                    for(int j=0;j<3;j++)
+                    {
+                    cout<<"enter the element of set b "<< i+1<<":";
+                    cin>>a[i][j];
+                    }
+                }
+              
+           }
+           void display()
+           {
+                cout<<"**********ADJENCY MATRIX**********"<<"\n";
+                for(int i=0;i<3;i++)
+                {
+                    for(int j=0;j<3;j++)
+                    {
+                        cout<<a[i][j];
+                        cout<<"\t";
+                    }
+                 cout<<"\n";
+                }
+           }
+           
+               
+                
+            
+};
+
+int main()
+{
+    adjency obj;
+    obj.creat();
+    obj.display();
+    obj.dfs();
+}       
+
+       
